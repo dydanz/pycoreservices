@@ -50,7 +50,7 @@ def initdb():
         user.save()
     except exc.SQLAlchemyError as e:
         db.session.rollback()
-        print('Failed to Create First User, %s', e)
+        print('Failed to Create First User Data, %s', e)
 
 
 @manager.command
